@@ -43,14 +43,12 @@ public class Ex01 {
 		// 변수의 값을 출력 
 		System.out.printf("아버님 이름은 %s , 어머님 이름은 %s 형제이름은 %s 나의 이름은 %s \n\n", 
 				fName, mName, bName, myName );
-		System.out.printf("아버님 나이는 %d, 어머님 나이는 %d 형제나이는 %d 나의 나이 %d \n\n", fAge, mAge, bAge, myAge);
+		System.out.printf("아버님 나이는 %d, 어머님 나이는 %d 형제나이는 %d 나의 나이 %d \n\n", 
+				fAge, mAge, bAge, myAge);
 		
 		System.out.printf("우리 가족의 나이의 합계는 %d, 평균은 %5.2f \n ", sum , avg );
 		
-		
-		
-		
-		
+				
 		
 	}
 
