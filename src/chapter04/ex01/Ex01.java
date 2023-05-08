@@ -17,7 +17,7 @@ public class Ex01 {
 		
 		System.out.println("현재 자산을 입력 하세요>>>>>");
 		
-		money = sc.nextInt();     
+		money = sc.nextInt();         // 콘솔에서 정수값을 인풋 받아 money 변수에 할당    
 		
 		if ( 0 <= money && 3000 > money  ) {
 			System.out.println("걸어서 다닙니다" );
@@ -28,7 +28,7 @@ public class Ex01 {
 		} else {
 			System.out.println("비행기를 타고 다닙니다.");
 		}
-		
+		sc.close();      // 스캐너 종료 , 메모리에서 삭제 
 		
 	}
 }
