@@ -52,7 +52,7 @@ public class Ex01 {
 				System.out.println("3. 10개의 정수를 입력받아 그 수들 중 짝수의 개수가 몇 개인지 출력하는 프로그램 ");
 				
 				System.out.println("정수 10개를 공백을 사용해서 입력 하세요 >>> ");
-				int c , count = 0  ; 	// c : 스캐너로 받아서 저장하는 변수, count : 짝수만 카운트 하는 변수 
+				int c , count=0  ; 	// c : 스캐너로 받아서 저장하는 변수, count : 짝수만 카운트 하는 변수 
 				for ( int i = 1; i <= 10; i++) {
 					c = sc.nextInt();    
 					if (c == 0) {
@@ -69,6 +69,27 @@ public class Ex01 {
 				
 			}else if ( a == 4) {
 				System.out.println("4. 입력받은 정수만큼 성적을 입력받아서 총점과 평균을 출력하는 프로그램 ");
+				System.out.println("성적을 몇개를 작성할지 정수로 넣어주세요. >>>");
+				int b , c , sum = 0 , count = 0 ; 
+						// b : 과목의 성적의 갯수 : 3 (국어, 영어, 수학) 
+						// c : 점수를 담을 변수 : for 문을 사용해서 Scanner 로 인풋 받는 변수 
+						// sum : 인풋 받은 점수를 합하는 변수 , 
+						// count : 과목의 갯수  ==  b 
+				b = sc.nextInt();     
+				System.out.println("각 과목의 점수를 공백을 사용해서 입력한 갯수만큼 넣어주세요.>>>");
+				
+				for ( int i = 1 ; i <= b ; i++ ) {
+					c = sc.nextInt(); 
+					
+					sum += c;    // sum = sum + c 
+					count++;   
+				}
+				double avg =  (double) sum /count ; 
+				
+				System.out.printf("입력한 과목수는 : %d 이고, 합계는 : %d 이고, 평균은 : %.2f", count, sum, avg);
+				System.out.println();
+				
+				
 				
 			}else if ( a == 5) {
 				System.out.println("5. 프로그램 종료 ");
