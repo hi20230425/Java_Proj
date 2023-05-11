@@ -67,8 +67,6 @@ public class Ex01 {
 			System.out.println();
 		}
 		
-		
-		
 		System.out.println("== 3. Arrays.toString 문으로 출력 ===");
 		System.out.println(Arrays.toString(arr1[0]));
 		System.out.println(Arrays.toString(arr1[1]));
