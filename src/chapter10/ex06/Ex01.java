@@ -73,14 +73,31 @@ public class Ex01 {
 		}
 		
 		System.out.println("=================================");
-		// for 문을 사용해서  아래와 같이 출력되도록 구문 작성 하세요.  : 
+		// for 문을 사용해서  아래와 같이 출력되도록 구문 작성 하세요.  : 완료 시간 : 15: 50분 
+		//각 과목의 합을 구하는 변수 선언 
+		int sumKor = 0 ; 
+		int sumEng = 0 ; 
+		int sumMath = 0; 
 		
+		// 배열로 변수 선언 ; 
+		int[] sum = new int[3] ;    // sum[0] :국어점수의 합, sum[1] : 영어점수의 합, sum[2] : 수학 점수의 합
 		
-		//모든사용자의 국어점수의 총합 : 000점 
-		//모든사용자의 영어점수의 총합 : 000점 
-		//모든사용자의 수학점수의 총합 : 000점 
-
+		//모든사용자의 국어 점수의 총합 : 000점 
+		//모든사용자의 영어 점수의 총합 : 000점 
+		//모든사용자의 수학 점수의 총합 : 000점 
 		
+		// Student[] arr = new Student[] {s1, s2, s3, s4, s5} ;
+		
+		for ( int i = 0 ; i < arr.length; i++) {
+			
+			sum[0] += ((Student_Sub)arr[i]).kor;      // sum[0] = sum[0] + kor
+			sum[1] += ((Student_Sub)arr[i]).eng; 
+			sum[2] += ((Student_Sub)arr[i]).math; 
+		}
+		System.out.println("모든 사용자의 국어 점수의 총 합은 : " + sum[0]);
+		System.out.println("모든 사용자의 영어 점수의 총 합은 : " + sum[1]);
+		System.out.println("모든 사용자의 수학 점수의 총 합은 : " + sum[2]);
+	
 		
 	}
 
