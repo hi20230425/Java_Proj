@@ -8,7 +8,7 @@ class Aaa {
 		cde(); 
 	}
 	void cde() throws ClassNotFoundException {
-		//DB 연결시 사용 : 일반 예외 : 반드시 예외 처리 (1. 자신이 직접 철리, 2. throws로 미룬다. )
+		//DB 연결시 사용 : 일반 예외 : 반드시 예외 처리 (1. 자신이 직접 처리, 2. throws로 미룬다. )
 		Class cls = Class.forName("java.lang.Object1");	
 		System.out.println("존재하는 클래스 입니다. ");
 	}
