@@ -32,7 +32,7 @@ public class Single_Gerneric {
 		 	      	   기본자료형 <===> 객체형자료형
 		 	         - boolean <===> Boolean 
 		 	         - char    <===> Charter 
-		 	         - byty    <===> Byte
+		 	         - byte    <===> Byte
 		 	         - short   <===> Short
 		 	         - int     <===> Integer
 		 	         - long    <===> Long 
