@@ -47,12 +47,14 @@ public class Array_VS_List {
 		aList.add("가"); aList.add("나");aList.add("다");aList.add("라");
 		aList.add("마");aList.add("바");aList.add("사");
 		
+		System.out.println(aList.toString());  //[가, 나, 다, 라, 마, 바, 사]
 		System.out.println("List 의 방의 크기 : " + aList.size());    //방의 크기를 출력 
 
 		aList.remove("다"); 
 		aList.remove("바");
 		
 		System.out.println("List 의 방의 크기 : " + aList.size());    //방의 크기를 출력 
+		System.out.println(aList); //[가, 나, 라, 마, 사]
 		
 		
 		
