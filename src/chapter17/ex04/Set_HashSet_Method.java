@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Set_Method {
+public class Set_HashSet_Method {
 
 	public static void main(String[] args) {
 		/*
