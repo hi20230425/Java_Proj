@@ -14,7 +14,6 @@ class Member {
 		this.memberID = memberID;
 		this.memberName = memberName;
 	}
-
 	
 	
 	// 객체를 출력시 필드의 내용을 출력
@@ -72,7 +71,7 @@ class MemberMethod { // 완료시간 : 6:00 까지. p.jangwoo@gmail.com
 		}
 		System.out.println("회원님의 아이디는 검색 되지 않았습니다. ");
 		
-		return false; // 잘삭제가 완료된 경우, 해당 ID가 존재하지 않는 경우 return false
+		return false; // 잘 삭제가 완료된 경우 true , 해당 ID가 존재하지 않는 경우 return false
 	}
 
 	// Set에 저장된 Member객체의 필드의 값을 출력
@@ -115,7 +114,8 @@ public class Ex03 {
 		mm.addMember(m6);
 		
 		//set에 저장된 총 갯수 
-		mm.showSize();
+		mm.showSize();     // 4 
+		
 		System.out.println("==================");
 		//set에 저장된 member 객체를 출력 
 		mm.showMember();
@@ -125,7 +125,7 @@ public class Ex03 {
 		mm.removeMember("2222"); 
 		mm.removeMember("3333"); 
 		
-		mm.showMember();
+		mm.showMember();  //2 
 	}
 
 }
